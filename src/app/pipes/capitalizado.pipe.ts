@@ -21,7 +21,9 @@ export class CapitalizadoPipe implements PipeTransform {
             }
         }
         else {
-            // continuar aquí            
+            // continuar aquí      
+            nombres[0] = nombres[0][0].toUpperCase()+ nombres[0].substr(1);
+            result = nombres.join(' ');
         }
         return result
     }
